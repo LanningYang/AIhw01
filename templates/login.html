@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+登入會員
+{% endblock title %}
+
+{% block message %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form action="{{ url_for('login') }}" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label"><p>email</p></label>
+                    <input type="text" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label"><p>password</p></label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="login">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock message %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}登入成功{% endblock title %}
+
+{% block message %}
+<h3>登入成功</h3>
+<input type="button" value="進入網頁" onclick="location.href='/user/{{username}}'">
+{% endblock message %}
